@@ -5,12 +5,19 @@
     Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
     */
 
-    //Entrada
 
+    //Entrada
+    let num =  Number(prompt("Informe uma nota entre 1 e 10").replace(",","."));
 
     //Processamento
-
+    while (num < 1 || num > 10) {
+        alert("Valor inválido");
+        num = Number(prompt("Informe uma nota entre 1 e 10").replace(",","."));
+    }
 
     //Saída
+
+
+
 
 </script>

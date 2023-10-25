@@ -12,6 +12,36 @@
 
     //Entrada
 
+let nome = prompt('informe seu nome ');
+while (nome.length <= 3) {
+    alert (`valor invalido`);
+    nome = prompt('informe seu nome ');
+}
+
+let idade = Number(prompt('informe sua idade'));
+while (idade < 0 || idade >= 150) {
+    alert (`valor invalido`);
+    idade = Number(prompt('informe sua idade '));
+}
+
+let salario = Number(prompt('informe seu salario ').replace(",","."));
+while (salario < 0) {
+    alert (`valor invalido`);
+    salario = Number(prompt('informe seu saario '));
+}
+
+let sexo = prompt('informe seu genero, F-feminino, M-masculino ').toUpperCase();
+while (sexo !== "F" && sexo !== "M") {
+    alert (`valor invalido`);
+    sexo = prompt('informe seu genero, F-feminino, M-masculino ').toUpperCase();
+}
+
+let civil = prompt('informe seu estado civil  S-solteiro, C-casado, V-viuvo, D-divorciado ').toUpperCase();
+while (civil !== "S" && civil !== "C" && civil !== "V" && civil !== "D") {
+    alert (`valor invalido`);
+    civil = prompt('informe seu estado civil  S-solteiro, C-casado, V-viuvo, D-divorciado ');
+}
+
 
     //Processamento
 

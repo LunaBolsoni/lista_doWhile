@@ -7,9 +7,13 @@
 
     //Entrada
 
-
+const senha = Number(prompt('informe uma senha formada de quatro números inteiros.'));
     //Processamento
 
+while ( senha !== 4 ) {
+    alert(`senha incorreta!`);
+    senha = Number(prompt('informe uma senha formada de quatro números inteiros.'));
+}    alert (`Senha correta!`);
 
     //Saída
 
