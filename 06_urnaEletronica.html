@@ -20,13 +20,37 @@
     */
 
     //Entrada
-
-
+    let nulo = 0;
+    let mariazinha = 0;
+    let joaozinho = 0;
+    let branco = 0;
+    let voto;
     //Processamento
-
-
+    while (voto != 0) {
+        voto = Number(prompt('informe seu voto 1-Joãozinho, 2-Mariazinha, 3-Nulo, 4-Branco'));
+        switch (voto) {
+            case 1:
+                joaozinho++;
+                break;
+            case 2:
+                mariazinha++;
+                break;
+            case 3:
+                nulo++
+                break;
+            case 4:
+                branco++;
+                break;
+            case 0:
+                break;
+            default:
+                alert(`voto invalido`);
+                break;
+        }
+    }
+    let total = nulo + mariazinha + joaozinho + branco;
+    let brancoTotal = (branco / (total)) * 100;
+    let nuloTotal = (nulo / (total)) * 100;
     //Saída
-
+    alert(` Os votos totais foram ${total}. O candidato Joaozinho obteve ${joaozinho} votos. A Mariazinha teve ${mariazinha} votos. Os votos nulos foram ${(nuloTotal).toFixed(1).replace(".",",")}. E os votos em branco foram ${(brancoTotal).toFixed(1).replace(".",",")}. ${(joaozinho > mariazinha) ? "joaozinho foi o vencedor" : "mariazinha foi a vencedora"}`);
 </script>
-
-

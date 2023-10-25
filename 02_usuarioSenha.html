@@ -1,23 +1,22 @@
 <meta charset="UTF-8">
 <script>
     /*
-    Problema: Nota entre 0 e 10
-    Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+    Problema: Validar Usuário e Senha
+    Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
     */
 
 
+
     //Entrada
-    let num =  Number(prompt("Informe uma nota entre 1 e 10").replace(",","."));
+    const usuario = prompt("Informe seu nome de usuário").trim();
+    const senha = prompt("Informe sua senha").trim();
 
     //Processamento
-    while (num < 1 || num > 10) {
-        alert("Valor inválido");
-        num = Number(prompt("Informe uma nota entre 1 e 10").replace(",","."));
+    while (usuario == senha) {
+        alert(`Senha inválida, use uma senha diferente do usuario.`);
+        senha = prompt("Informe sua senha").trim();
     }
 
     //Saída
-
-
-
 
 </script>
